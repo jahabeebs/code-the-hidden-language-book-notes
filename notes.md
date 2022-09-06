@@ -88,5 +88,56 @@ Chapter 5: Communicating Around Corners
     Overcoming resistance
         Thickness of wire measured in American Wire Gauge (AWG)
         Smaller AWG = thicker wire = less resistance
+
+Chapter 6: Logic with Switches
+    Basis of Aristotle's logic was syllogism
+        Two premises assumed to be correct and a conclusion is deduced
+    George Boole
+        Believed human brain uses logic so if we could represent logic we would know how the brain works
+        Invented boolean algebra in which letters are operands and are combined with operators (+, x)
+    Traditional algebra properties
+        Addition and multiplication are commutative (we can switch around symbols on each side of operators)
+        Subtraction and division are not commutative
+        Addition and multiplication are associative
+            A + (B + C) = (A + B) + C
+        Multiplication is distributive over addition 
+    Boole divorced algebra from concept of numbers
+        Operands refer to classes not numbers
+            Class is a group of things, similar to what a set is now considered
+            Ex: M refers to class of male cats and F refers to class of female cats
+        + symbol means union of two classes (M + F) = class of all cats that are male or female
+        x symbol means intersection of two classes (M x F) = class of all cats that are BOTH male and female
+        Commutative, associative, and distributive rules apply for Boolean algebra
+        The symbol 1 means "the universe" or everything we're discussing
+            M + F = 1 means the union of male and female cats is the class of all cats
+            1 - M means the class of all cats except male cats
+            1 - M = F means the universe excluding all male cats is same as the class of female cats
+        The symbol 0 means an empty class, like when take an intersection of two exclusive classes
+            F x M = 0 because there are no cats that are both male and female
+    The roles of "or" and "and"
+        + symbol can mean OR
+        x symbol can mean AND
+        1 - means NOT
+    Circuitry and boolean logic
+        Circuits can represent "and" and "or" via switches
+        Switches connected in parallel don't both have to be closed for the circuit to work (represents OR)
+        
+Chapter 7: Telegraphs and Relays
+    Morse (born 1791) relied on electromagnetism for long-distance communication
+        An iron bar wrapped with thin, insulated, electrified wire will create a magnet
+        Electromagnet is foundation of telegraph
+            Turning switch on and off at one end causes electromagnet to do something at other end
+    Telegraph was demoed publicly in 1843
+        Telegraph used by holding and handle and tapping it up and down
+        Short tap produces Morse code dot and long tap produces morse code dash
+    Telegraph advancements
+        Telegraph sounder used to create click clack noises
+            Telegraph key was pressed, electromagnet pulled bar down to make a click noise
+                Releasing key made a clack noise
+            Fast click-clack = dot; slower click-clack was dash
+    Repeater or relay
+        Similar to a sounder because current is used to power electromagnet that pulls a lever
+            Different because lever is used as part of a switch that connects battery to outgoing wire
+        Amplifies weak incoming current to create stronger outgoing current
 </pre>
     
