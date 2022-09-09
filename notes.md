@@ -139,5 +139,59 @@ Chapter 7: Telegraphs and Relays
         Similar to a sounder because current is used to power electromagnet that pulls a lever
             Different because lever is used as part of a switch that connects battery to outgoing wire
         Amplifies weak incoming current to create stronger outgoing current
+
+Chapter 8: Relays and Gates
+    Logic gates--embody melding of math and hardware 
+        Computer is a synthesis of Boolean algebra & electricity
+    Circuit vs. network
+        Current must pass through all elements in circuit but not necessarily in network
+    Networks
+        Panel of switches constitutes an input device
+        Output device can be a lightbulb for example
+    Relays can be connected in series and in parallel as logic gates to perform tasks
+        Relays unlike switches can be switched on and off by other relays
+        When electromagnet pulls metal contact the relay is triggered
+        If current flows through input then electromagnet triggered and output has voltage
+    Output of one relay can be connected to input of another relay
+        Relays are considered cascaded
+        Connecting relays is key to logic gates
+    Relays can be connected to form an "AND gate"
+        AND gate can connect to another AND gate
+        Two relays wired in parallel considered OR gate
+    Diagrams in book are double-throw relays
+        Pivoting metal bar touches one contact and when electromagnet touches it then it hits another
+        Upper contact called normally closed
+        Lower contact called normally open
+    Single throw relay considered an inverter
+        Inverts 0 (no voltage) to 1 (voltage) and vice versa
+        Represents Boolean NOT operator
+    Rules on connecting gates and inverters
+        Output of one gate or inverter can be input to 1+ other gates (or inverters)
+        Cannot connect outputs of two or more gates (or inverters) to one another
+    Other types of logic gates
+        NOT OR/NOR logic gate
+            Both switches closed then lightbulb off
+            Top or bottom switch closed then light is off
+        NOT AND/NAND logic gate
+            Lightbulb goes off when both switches closed
+        Buffer
+            Simple relay that doesn't change input
+            Output same as input
+            Sometimes one output must serve as many inputs
+                Called fan out
+                Buffers can boost power at each output
+            Can slightly delay a signal too
+    NAND and NOR can ceate all other logic gates
+        
+Chapter 9: Our Ten Digits
+    Humans use base-ten or decimal system because we have ten fingers
+        Roman numerals invented to make it so single lines didn't have to represent big numbers
+        Existing roman numerals are I (1), V (5), X (10), L (50), C (100), D (500), M (1000)
+    Our current number system is Hindu-Arabic/Indo-Arabic
+        Indian origin but brought to Europe by Arab mathematicians
+        Differs in three ways from previous systems
+            Hindu-Arabic system is positional
+            No special symbol for ten
+            Has zero
 </pre>
     
