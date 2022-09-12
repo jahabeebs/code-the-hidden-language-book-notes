@@ -193,5 +193,21 @@ Chapter 9: Our Ten Digits
             Hindu-Arabic system is positional
             No special symbol for ten
             Has zero
+
+Chapter 10: Alternative 10s
+    Decimal/base ten system
+        In an octal system numbers are 0, 1, 2, 3, 4, 5, 6, 7, then 10 
+            Because no special symbol for 10 in base ten system
+    Converting quaternary system to base ten system
+        31232 to base ten
+            3 * 4^4 + 1 * 4 ^ 3, etc. = 878 in decimal
+    Converting binary to decimal
+        10010110
+            1 * 128 + 0 * 64 + 0 * 32, etc.
+        Converting decimal to binary is similar but with division
+            Have to divide until get a quotient and remainder
+            Keep moving remainder to next box until it can be divided
+    In 1947 American mathematician Tukey wanted to replace "binary digit"
+        Decided on bit
 </pre>
     
