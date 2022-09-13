@@ -209,5 +209,14 @@ Chapter 10: Alternative 10s
             Keep moving remainder to next box until it can be divided
     In 1947 American mathematician Tukey wanted to replace "binary digit"
         Decided on bit
+
+Chapter 11: Bit by Bit by Bit
+    A bit is the basic building block of information
+        Information represents choice among 2+ possibilities
+        Any info that can be reduced to choice among 2+ possibilities can be represented with bits
+        # of possible codes equal to 2 to the power of number of bits
+    Codes -> bits
+        2^7 = 128 is same as log2(128) = 7
+    Binary powers UPC codes, QR codes
 </pre>
     
