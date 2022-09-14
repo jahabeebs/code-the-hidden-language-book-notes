@@ -218,5 +218,29 @@ Chapter 11: Bit by Bit by Bit
     Codes -> bits
         2^7 = 128 is same as log2(128) = 7
     Binary powers UPC codes, QR codes
+
+Chapter 12: Bytes and Hexadecimal
+    What is a word?
+        Group of certain # of bits
+        Computer data moves in groups of 1 or more words
+    Anatomy of a word
+        Early computers used word lengths that were multiples of 6 bits
+            Very easy to represent w/octal numbers: 0, 1, 2, 3, 4, 5, 6, 7 (each 3 bits)
+    Start of the byte
+        Originated at IBM around 1956
+        Came to mean group of 8 bits (00000000 to 11111111, or 0 through 255)
+        Bytes also ideal for shades bc human eye can only differentiate 256 shades of gray
+        Half a byte (4 bits) considered a nibble
+    The hexadecimal base 16 system 
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, 10, 11, 12...
+        Each byte is 8 bits, or two hexadecimal digits ranging from 00 to FF
+        To denote hexadecimal add a lowercase h following a number
+            10h is 16, 18h is 24, 20h is 32, etc.
+    `   Common to express big binary numbers in groups of 4 bc of hexadecimal
+    HTML and colors
+        #E74536 = red value of E7h, green value of 45h, blue value of 36h
+        Positions of each digit correspond to powers of 16
+            65,536 & 4,096 & 256 & 16 & 1
+            9A48Ch = 9 * 16^4 + A * 16^3...
 </pre>
     
