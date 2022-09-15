@@ -242,5 +242,61 @@ Chapter 12: Bytes and Hexadecimal
         Positions of each digit correspond to powers of 16
             65,536 & 4,096 & 256 & 16 & 1
             9A48Ch = 9 * 16^4 + A * 16^3...
+
+Chapter 13: From ASCII to Unicode
+    Codes vs. binary
+        Morse code is variable bit-length code because characters require different # of bits
+        Braille is strictly a 6-bit code but uses shift codes\
+    Shift codes
+        Show up in early binary--they change the meaning of the following characters
+            Called Baudot code and was used for sending and receiving telegrams
+    Baudot code
+        Transmission speeds of binary data can be called baud rates
+        Baudot code often used in teletypewriter--similar to typewriter but w/30 keys and spacebar
+        Baudot code is 5 bits so only 32 codes
+    ASCII code (7 bits) replaced Baudot code
+        American Standard Code for Information Interchange
+        Most important standard in computer industry--affects all text on a computer
+        Includes the characters of a keyboard basically (including uppercase)
+        Add 20h to code for an uppercase letter to convert to lowercase
+        ASCII has 95 graphic characters with visual representation
+        ASCII has 33 control characters with no visual representation but w/functions
+            Most are for typewriters but also includes tab, backspace, etc.
+        Extended ASCII character set contains 256 characters rather than just 128
+    Files are collections of bytes identified by a name
+        ASCII character files have txt (plain text) filename extension
+        Fancy text like italics is formatted text or rich text
+        ASCII technically 7-bit code but stored as 8-bit values because of computer architecture
+    HTML is most popular rich-text format
+        Adds formatting to plain text by using markup or tags
+        Uses normal ASCII characters for markup so technically is also a plain-text file
+    ASCII compatibility issues
+        Multiple incompatible double-byte character sets
+        Some characters (like normal ASCII characters) are represented by 1-byte codes
+            Thousands of ideographs are represented by 2-byte codes
+    Unicode (16-bit code) developed as alternative to ASCII
+        First 128 characters are same as ASCII characters
+        Standard way to indicate is prefacing value with capital U and a plus sign
+            U+0041 is character 'A'
+    Big-endian vs little-endian machines
+        Some computers read most significant byte (big end) first 
+        Other computers read least significant byte first
+        Unicode defines character called byte order mark (U+FEFF) to specify order
+    Unicode had to expand beyond 16 bits to include more symbols and extinct scripts
+        Unicode now a 21-bit code with values through U+10FFFF
+    Several methods defined for storing and transmitting Unicode text
+        Called Unicode transformation formats (UTFs)
+        Most straightforward UTF is UTF-32
+            All Unicode characters defined as 32-bit values
+            Downside is uses a lot of space (11 bits wasted)
+        UTF-16 defines characters w/2 bytes
+            Characters above U+FFFF are defined w/4 bytes
+        Most important UTF is UTF-8 which is in 97% of webpages
+            Notepad and TextEdit save files in UTF-8 by default
+            Biggest advantage is it's backward compatible with ASCII
+            Identifying bytes when decoded
+                Byte begins w/0: 7-bit ASCII code
+                Byte begins w/10: part of sequence of bytes representing multi-byte character code
+                Bytes begins w/at least two 1 bits: first byte of multibyte character code
 </pre>
     
