@@ -181,7 +181,7 @@ Chapter 8: Relays and Gates
                 Called fan out
                 Buffers can boost power at each output
             Can slightly delay a signal too
-    NAND and NOR can ceate all other logic gates
+    NAND and NOR can create all other logic gates
         
 Chapter 9: Our Ten Digits
     Humans use base-ten or decimal system because we have ten fingers
@@ -246,7 +246,7 @@ Chapter 12: Bytes and Hexadecimal
 Chapter 13: From ASCII to Unicode
     Codes vs. binary
         Morse code is variable bit-length code because characters require different # of bits
-        Braille is strictly a 6-bit code but uses shift codes\
+        Braille is strictly a 6-bit code but uses shift codes
     Shift codes
         Show up in early binary--they change the meaning of the following characters
             Called Baudot code and was used for sending and receiving telegrams
@@ -298,5 +298,35 @@ Chapter 13: From ASCII to Unicode
                 Byte begins w/0: 7-bit ASCII code
                 Byte begins w/10: part of sequence of bytes representing multi-byte character code
                 Bytes begins w/at least two 1 bits: first byte of multibyte character code
+
+Chapter 14: Adding with Logic Gates
+    Addition is basically the only thing computers do
+    Binary addition table is simple
+        + 0 1
+        0 00 01
+        1 01 10
+        Adding pair of binary numbers results in two bits, called the sum bit and the carry bit
+    Binary addition table can be divided into two tables, first for sum bit and second for carry bit
+        sum 0 1
+        0 0 1
+        1 1 0
+        carry 0 1
+        0 0 0
+        1 0 1
+    If we want to add binary #'s up to 8 bits long we need two rows of eight switches and nine bulbs
+    Exclusive OR (XOR) gate
+        Combination of NAND, AND, and OR gates bc XOR represents when both NAND & OR both yield 1
+        Example of encapsulation--wrapping the details for simplicity
+        Can represent XOR gate with a box called a half adder
+            Sometimes box like this called a black box or a clear box
+        Two half adders can be combined to make a full adder
+    For adding binary #'s up to 8 bits long we can use eight full adders to simplify
+        First column doesn't include carry bit which is why carry input to full adder is connected to ground
+        Carry output from first full adder is an input to second full adder
+    Can represent 8-bit adder w/double-line arrows w/an 8 to represent 8 separate signals
+        These are 1-byte data paths
+    Easy to cascade 8-bit adders to add two 16-bit numbers instead
+        Two 16-bit input values separated into low byte and high byte
+            Carry out of the adder on right is connected to carry in of adder on left
 </pre>
     
