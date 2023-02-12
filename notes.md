@@ -328,5 +328,35 @@ Chapter 14: Adding with Logic Gates
     Easy to cascade 8-bit adders to add two 16-bit numbers instead
         Two 16-bit input values separated into low byte and high byte
             Carry out of the adder on right is connected to carry in of adder on left
+
+Chapter 15: Is This for Real?
+    Computers don't add numbers like above anymore
+        Computers today no longer made from relays
+    Electromechanical computers were next generation
+        Relay-based computers, the first working digital computers
+        George Stibitz coined the term digital to distinguish them from analogy computers which were already in use
+    Computer used to refer to a person who calculated numbers for hire
+        Charles Babbage had an idea for a machine that could calculate numbers for these computers
+            Never finished it
+    Ada Lovelace translated an article about Babbage's machine and added sample set of instructions for it
+        Ada was the first person who published a computer program though Babbage was the first programmer
+    Vacuum tubes were being used as relay replacement by the 1940s
+        Expensive, required a lot of power, and generated a lot of heat
+        Tubes were much faster than relay
+    Two physicists at Bell Labs wired a new type of amplifier constructed from germanium + gold
+        The idea is that amplifiers could use semiconductors instead of vacuum tubes 
+        The first transistor, which some have called the most important invention of the 20th century
+    Semiconductors can be made into amplifiers by sandwiching P-type semiconductor between two N-type semiconductors (NPN transistor)
+        Three pieces knows as the collector, the base, and the emitter
+    In 1954 the first pocket radios used transistors made by Texas Instruments
+    Texas Instrument employee discovered multiple transistors and other electronic components could be placed on a single piece of silicon
+        Integrated circuit (IC) was born (aka the chip)
+    Integrated circuits manufactured by layering thin wafers of silicon precisely doped and etched
+        Space program and arms race in 1960s fueled early IC market
+        Hearing aid was the first commercial product to use ICs
+    Moore's Law predicted doubling of transistors on a chip every 18 months
+        Has mostly been true
+    Summary of evolution of computers
+        Relay-based -> vacuum tube -> transistor -> integrated circuit
 </pre>
     
