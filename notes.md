@@ -388,5 +388,41 @@ Chapter 16: Subtraction
         8-bit binary number could range from -128 to 127, called signed bc can be positive or negative
     An integer is a number that can be positive or negative with no fractional parts
     8-bit integers often inadequate for many jobs so programmers use 16, 32, or 64-bit integers
+
+Chapter 17: Feedback and Flip-Flops
+    Oscillator: circuit that runs by itself--no human to open or close a switch
+        All computers have some kind of oscillator that makes things move synchronously
+        Sometimes referred to as a clock because counting its oscillations can kind of tell time
+    One cycle of oscillator is interval during which output changes and comes back to where it started
+        Time required for one cycle is called the period
+        Frequency of oscillator is 1 divided by period
+            Example: 1 / 0.02 = 50 cycles per second
+            Now hertz is used rather than cycles per second
+    Type of feedback is when an output circles back to become an input
+    In an oscillator can close either top switch or buttom but not both at same time
+    Flip-flop circuit
+        Circuit with two stable states when both switches open
+        Sometimes when both switches open, light stays on but sometimes it's o
+        Flip-flop retains information--it's very much like a seesaw
+        Two NOR gates is an R-S or Reset-Set flip-flop
+    Function/logic/truth table shows outputs that result from combo of inputs
+        Includes Q, Q bar (outputs), R, S (inputs)
+    Level-triggered D-type flip-flop / level-triggered D-type latch / 1 bit memory
+        D stands for data
+        Level-triggered means flip-flop saves value of data input when clock input is at particular level (1 in this case)
+    Positive transition/edge
+        When clock input goes from 0 to 1
+        Transition from 1 to 0 is a negative transition/edge
+    Frequency divider
+        When Q bar output is routed back to the data input of a flip-flop
+    Ripple counter
+        Output of each flip-flop becomes the clock input of the next flip-flop
+        More sophisticated counters are synchronous
+        Allows for counting of binary numbers -- more flip-flops = higher count
+        When total reaches 11111111 (255 in decimal) it goes back to 00000000
+            Sometimes know as rollover or wraparound
+    This chapter had examples of integrated circuits in family known as TTL (transistor-transistor logic)
+        7474 chip is a dual D-type positive-edge-triggered flip-flop with preset and clear
+        First step in constructing memory
 </pre>
     
