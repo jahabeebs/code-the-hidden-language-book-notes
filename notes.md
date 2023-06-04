@@ -358,5 +358,35 @@ Chapter 15: Is This for Real?
         Has mostly been true
     Summary of evolution of computers
         Relay-based -> vacuum tube -> transistor -> integrated circuit
+
+Chapter 16: Subtraction
+    Nines' complement can be used for subtraction because it doesn't require a borrow
+        Example: 1000 - 176 + 253 - 1000 can be rewritten as 999 - 176 + 253 + 1 - 1000
+    Decimal number subtracted from string of nines is called nines' complement
+    When subtracting smaller number from larger number means having to invert all bits to get result
+        Called ones' complement
+        There's a better way
+    If result is 9 bits for an 8-bit adder, the 9th bit is an overflow
+        Major addition we need to make is circuitry that calculates ones' complement of an 8-bit number
+        If invert signal is 0 then output is same as input
+        If invert signal is 1 then output is inverted
+    Subtract switch that comes from add/subtract switch
+        Signal is 0 if addition is selected and 1 if subtraction is selected
+        For an addition the invert signal is 0 and the Ones' complement circuit has no effect
+        For a subtraction you add 1 to result of addition by setting Carry In input of adder to 1
+            Also B inputs are inverted by Ones Complement circuit before entering adder
+    Negative numbers in binary are represented in two's complement
+        Every 8-bit number that begins with a 1 will represent a negative number
+            Leftmost bit is known as the sign bit
+        Similar system is ten's complement notation
+            For example to convert -255 in ten's complement subtract it from 999 and add 1 to get 745
+    Have to add some additional gates to detect overflow
+        AND gate detects overflow condition for adding two negative numbers (can't fit in 8 bits)
+        NOR gate detects overflow for positive number
+    Signed vs. unsigned binary numbers
+        8-bit binary number could range from 0 to 255, called unsigned bc always positve
+        8-bit binary number could range from -128 to 127, called signed bc can be positive or negative
+    An integer is a number that can be positive or negative with no fractional parts
+    8-bit integers often inadequate for many jobs so programmers use 16, 32, or 64-bit integers
 </pre>
     
