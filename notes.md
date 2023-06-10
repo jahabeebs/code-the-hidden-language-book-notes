@@ -424,5 +424,27 @@ Chapter 17: Feedback and Flip-Flops
     This chapter had examples of integrated circuits in family known as TTL (transistor-transistor logic)
         7474 chip is a dual D-type positive-edge-triggered flip-flop with preset and clear
         First step in constructing memory
+
+Chapter 18: Let's Build a Clock!
+    Basic clock format is XX:XX:XX (hours:minutes:seconds)
+        Can represent each digit in binary
+            This is called binary-coded decimal or BCD
+            Each digit of decimal number encoded as four-digit binary number
+            Not used much in computers because it complicates arithmetic
+    Using XOR gates adding switches to set time can become simple
+    Cold cathode display: glass tube filled with mostly neon
+        Inside are overlapping wires shaped into numbers connected to pins at the bottom
+        When voltage is applied to a pin the neon surrounding the number glows
+        Burroughs Corporation introduced the display and called it a Nixie tube
+        Special circuits called drivers for Nixie tubes are available to supply necessary current
+    Multiplexing allows decoding circuitry to be shared among multiple digits
+        This prevents needing decoding circuitry for every digit needed to display
+        Inputs to decoder can be shifted among different sources and outputs of decoder goes to all displays simultaneously
+    Dot matrix is another approach to displaying numbers and letters
+        Collection fo round lights arranged horizontally and vertically in a grid
+        Made up of 35 LEDs (light-emitting diodes) which allow electrical current to flow in one direction
+    Diode matrix is a collection of diodes arranged in a grid
+        Considered to be a type of memory
+        Cannot be changed without rewiring diodes so it's considered read-only memory or ROM
 </pre>
     
