@@ -446,5 +446,47 @@ Chapter 18: Let's Build a Clock!
     Diode matrix is a collection of diodes arranged in a grid
         Considered to be a type of memory
         Cannot be changed without rewiring diodes so it's considered read-only memory or ROM
+
+Chapter 19: An Assemblage of Memory
+    Even telegraph relays can store information
+        When assembled into flip-flops and logic gates it can store 1 bit
+    Latch is a type of flip-flop because it latches onto data
+        But we can call it memory
+    Creating 1 byte of memory
+        Wire together 8 bits of memory
+        Connect the eight write signals
+        Can be drawn as a single box
+    3-to-8 decoder
+        Rather than manipulate eight separate write signals can have one
+        Can use decoder to govern which flip-flop it controls
+    8-to-1-selector
+        Effectively selects one of the eight data out signals from the flip-flops
+    Writing to memory
+        Set three Address (Select) signals to 010 -> set Data In to 0 or 1 -> set Write to 1 and then 0
+        Value of Data is said to be stored in memory at address 010
+    Reading from memory
+        Set three Address signals to 010 again and see that Data Out is whatever you set Data In to
+    Read/write memory
+        Configuration of flip-flops, decoder, and selector
+        More commonly known as random access memory, or RAM
+    Particular configuration of RAM often called RAM array
+        RAM array that store 256 bytes is like post office with 256 post office boxes
+            Each box has a different 1-byte value
+    One bit of memory knows as memory cell
+    Tri-state buffer
+        Can have one of three outputs: ground (logical 0), voltage (logical 1), or nothing
+        Allows us to break rule prohibiting connecting outputs of logic gates
+        Outputs of multiple tri-state buffers can connect without creating short circuit
+    Kilobtye (KB) is 1024 bytes (2^10)  
+        Problem is that metric system is based on powers of 10 and binary powers of 2
+        1024 KB = 1 MB
+        1024 MB = 1 GB
+        1024 GB = 1 TB
+    Flip-flops memory was static RAM but by 1980 dynamic RAM/DRAM was taking over
+        DRAM requires only one transistor and one capacitor for each memory cell
+            Capacitor contains two separated electrical conductors
+            Capacitor can store electric charge but not indefinitely
+            DRAM works by having capacitor charges refreshed thousands of times per second
+        Both static and dynamic RAM are volatile memory
 </pre>
     
