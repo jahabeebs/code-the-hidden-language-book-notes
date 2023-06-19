@@ -488,5 +488,35 @@ Chapter 19: An Assemblage of Memory
             Capacitor can store electric charge but not indefinitely
             DRAM works by having capacitor charges refreshed thousands of times per second
         Both static and dynamic RAM are volatile memory
+
+Chapter 20: Automatic Arithmetic
+    An accumulator is a latch used to accumulate a running total of numbers
+        An accumulator doesn't just accumulate
+        Often acts as a latch that holds first one number and then that number combined with another
+        Problem is when a mistake is made and need to redo a calculation
+    Adding without a calculator
+        First enter 8 bytes into RAM array using control panel
+        Must connect RAM array to accumulating adder circuit (adder, latch, ram)
+        Need control signals
+            Clock input for counter, Clock input for latch, Write input for RAM
+            Most complex part of a circuit like this
+    When adding bytes some computers store from high to low and others low to high
+        These methods are big-endian and little-endian
+    Big vs little endian
+        For purposes of addition you'd want to start with least significant byte
+            So little-endian best for this
+    Instruction does or operation codes or op codes 
+        Instruct machine reading memory what to do -- like addition or subtraction
+        Contents of memory can now be differentiated as code and data
+    Triple-byte accumulator distinguishes hardware vs software
+        Hardware is circuitry 
+        Software is codes and data stored in memory
+        Codes and numbers are stored in flip-flops
+        Bits become signals that integrate with hardware
+    Both hardware and software are electrical signals interacting with logic gates
+    Microprocessor invented by 1980s
+        Could access 64kb of memory and interpret 256 different opcodes
+        Mostly designed for embedded systems
+        Intel 8080 was first microprocessor used in home computer
 </pre>
     
