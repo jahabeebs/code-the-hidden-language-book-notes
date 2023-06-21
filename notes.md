@@ -518,5 +518,33 @@ Chapter 20: Automatic Arithmetic
         Could access 64kb of memory and interpret 256 different opcodes
         Mostly designed for embedded systems
         Intel 8080 was first microprocessor used in home computer
+
+Chapter 21: The Arithmetic Logic Unit
+    Modern computer can be divided into three categories
+        Memory, central processing unit or CPU, input and output devices, often called peripherals
+    Peripherals can be visible or hidden
+        Some examples are video display, keyboard, mouse, printer
+        Less obvious I/O devices are circuits to play sound and music, circuits to pick up GPS
+    CPU is considered the heart/soul/brain of the computer
+        Similar to Triple-Byte Accumulator but generalized to respond to many codes
+    Higher bit CPUs are not more capable of different types of processing
+        They perform same tasks faster
+    Computer program is basically a sequence of instructions in memory
+        Specifically a machine code program when stored as opcodes and data
+    Arithmetic logic unit (ALU) is most fundamental part of CPU
+        Part of the CPU that adds and subtracts and does other tasks
+        Four major operations it must be capable of for our purposes
+            Add, add with carry, subtract, subtract with borrow
+        If want to convert uppercase to lowercase can use bitwise OR operation
+            Need to use an AND operation to convert to uppercase
+        Another useful bitwise operation is exclusive OR, or XOR 
+            Useful for addition
+        Immediate instructions use the next byte following the operation code
+            Compare operation evaluates result of operation
+        Compare operation is same as subtract operation but result isn't saved anywhere
+            Carry flag is saved
+            Also need to know if result of operation was zero which requires a zero flag
+            Sign flag needed to know if most significant bit of result is 1
+        There are other flags like the parity flag and auxiliary carry flag
 </pre>
     
