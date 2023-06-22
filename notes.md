@@ -546,5 +546,41 @@ Chapter 21: The Arithmetic Logic Unit
             Also need to know if result of operation was zero which requires a zero flag
             Sign flag needed to know if most significant bit of result is 1
         There are other flags like the parity flag and auxiliary carry flag
+
+Chapter 22: Registers and Busses
+    Bytes are moved from memory into the CPU and into the ALU
+        Bytes are moved from the ALU eventually into memory
+    Bytes are stored in latches while moved within the CPU
+        Like the latches in Chapter 20--four 8-bitch latches, one for opcode and 3 for data bytes
+    Latches called registers are 8-bit latches directly controlled by CPU instructions
+        One of these latches is called the accumulator
+            Always stores first of two inputs and output of ALU is always stored back in accumulator
+            From accumulator output of ALU can be moved to other register or stored in memory
+    Use of registers H and L in our example to form a 16-bit memory address is called indirect addressing
+    If all opcodes supported by an 8-bit processor are 1 byte in length then there can be 256 opcodes
+        Core arithmetical and logical functions supported by the CPU
+    Assembly language instructions refer to process of assembling a computer program
+        "Code to add the content of register E to the accumulator" becomes "ADD E"
+        "Perform an exclusive OR operation between the accumulator and memory byte at [HL]" becomes "XRA M"
+        STA means store accumulator
+        LDA means load accumulator
+        HLT corresponds to opcode 76h which halts the CPU
+        Move instructions are abbreviated with 8080 mnemonic MOV
+            For example the code 69h is MOV L,C
+                Destination register appears first and source register is second
+                Means move byte in register C to register 
+    One way to design a CPU is to decide what instructions CPU should implement then decide on circuitry
+    Register array allows CPU to store bytes in seven latches and retrieve bytes based on 3-bit codes
+        8-bit values going into array can come from memory, other registers, or ALU
+        8-bit values coming out of array can go to memory, other registers, or ALU
+    Connection between all the inputs and outputs is called a data bus
+        Data path that is common the inputs and outputs of all the components
+        Only for 8-bit data; for 16-bit data we need an address bus
+    Address used to access memory can come from different sources
+        Program counter: 16-bit value that accesses instructions (starts at 0000h and increases until HLT)
+        2 bytes following the STA or LDA operation codes which together form 16-bit address
+        H and L registers form a 16-bit address; when used this way HL is called a register pair
+    16-bit address bus is primarily for providing an address to the RAM
+        Must also be capable of moving 16-bit values among components of the CPU
 </pre>
     
