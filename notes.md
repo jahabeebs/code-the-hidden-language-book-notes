@@ -582,5 +582,37 @@ Chapter 22: Registers and Busses
         H and L registers form a 16-bit address; when used this way HL is called a register pair
     16-bit address bus is primarily for providing an address to the RAM
         Must also be capable of moving 16-bit values among components of the CPU
+
+Chapter 23: CPU Control Signals
+    ALU, register array, latches are connected to each other and RAM through data busses
+        8-bit data bus that ferries bytes among components
+        16-bit address bus used for memory address
+    The busses are main source of connection between components
+        Components also connected via control signals
+            They control components to execute instructions stored in memmory
+    Types of control signals
+        Signals that put value on one of the two busses
+        Signals that save a value from one of the two busses
+    How CPU executes instructions stored in memory
+        Synchronization of Enable inputs and Clock inputs
+        This is the key of where hardware and software meet
+        CPU control signals are the strings of the puppeteer
+    How the CPU executes instructions
+        First byte is the operation code (opcode)
+            Some may contain more than one
+        CPU uses value called program counter to address memory and move instruction to instruction latches
+        Five steps to process first instructin
+            1) Address RAM w/program counter value of 0000h and store value in instruction latch 1
+                Requires Program Counter Enable, Ram Data Out Enable, Incrementer-Decrementer Clock, Instruction Latch 1 Clock
+            2) Increments program counter
+                Just involves address bus: increment enable and then program counter clock
+            3 and 4) Same as first and second but they access the byte at memory address 0001h and save it in Instruction Latch 2
+            5) Execution of the instruction
+                Instruction Latch 2 Enable and Accumulator Clock (save value on data bus in accumulator)
+    Machine cycles, the steps we've been describing
+        Instruction bytes accessed from memory in one cycle that is followed by another that increments the program counter
+        Instruction execution requires one or two machine cycles depending on the instruction
+    Decoding the opcode
+        Connect output bits of Instruction Latch 1 to three decoders
 </pre>
     
